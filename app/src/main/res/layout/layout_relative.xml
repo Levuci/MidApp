@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="30dp"
+    android:orientation="vertical"
+    android:background="#5FA5EC"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivkotlin"
+        android:src="@drawable/kotlin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/ivkotlin"
+        android:id="@+id/met1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/username"
+            android:drawableStart="@drawable/ic_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/met1"
+        android:id="@+id/met2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/password"
+            android:drawableStart="@drawable/ic_password"
+            android:drawableEnd="@drawable/ic_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_marginTop="5dp"
+        android:text="@string/login"
+        android:layout_below="@id/met2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <TextView
+        android:id="@+id/tvForgetPassword"
+        android:layout_below="@id/btnLogin"
+        android:text="@string/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:textAlignment="textEnd"
+        android:layout_below="@id/btnLogin"
+        android:layout_toRightOf="@id/tvForgetPassword"
+        android:text="@string/create_a_new_accout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
